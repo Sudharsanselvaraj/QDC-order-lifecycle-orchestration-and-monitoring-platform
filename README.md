@@ -73,7 +73,6 @@ This submission implements a minimal but production-reasoned slice of that syste
               │  In-memory ORDERS array        │
               └────────────────────────────────┘
 ```
-
 ### Module Graph
 
 ```
