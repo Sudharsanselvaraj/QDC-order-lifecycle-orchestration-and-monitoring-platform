@@ -47,14 +47,14 @@ This submission implements a minimal but production-reasoned slice of that syste
 ┌─────────────────────────────────────────────────────────────┐
 │                        Browser                              │
 │                                                             │
-│  ┌──────────────┐   ┌───────────────────┐   ┌───────────┐  │
-│  │   Sidebar    │   │   Main Panel      │   │  Detail   │  │
-│  │  (nav/counts)│   │  (filter + table) │   │  Pane     │  │
-│  └──────┬───────┘   └────────┬──────────┘   └─────┬─────┘  │
-│         │                    │  React state         │        │
-│         └────────────────────┼──────────────────────┘        │
-│                              │ fetch()                        │
-└──────────────────────────────┼────────────────────────────────┘
+│  ┌──────────────┐   ┌───────────────────┐   ┌───────────┐   │
+│  │   Sidebar    │   │   Main Panel      │   │  Detail   │   │
+│  │  (nav/counts)│   │  (filter + table) │   │  Pane     │   │
+│  └──────┬───────┘   └────────┬──────────┘   └───────┬───┘   │
+│         │                    │  React state         │       │
+│         └────────────────────┼──────────────────────┘       │
+│                              │ fetch()                      │
+└──────────────────────────────┼──────────────────────────────┘
                                │ HTTP/REST
                                ▼
               ┌────────────────────────────────┐
@@ -319,7 +319,7 @@ The dashboard is styled to match **Linear's operational UI** — dark background
 │  ─────────          │  All 2  Received 1  Ready 1  │  ──────────  │
 │  Inbox         2    │  ─────────────────────────── │  Customer    │
 │  My Orders     2    │  ORDERS          2 orders    │  Order Date  │
-│  Ready         1    │  ───────────────────────────  │  GARMENTS    │
+│  Ready         1    │  ─────────────────────────── │   GARMENTS   │
 │  In Cleaning   1    │  ORD-1001  Alice  2  30 May  │  Blue Shirt  │
 │  Delivered     0    │  ORD-1002  Bob    1  30 May  │              │
 │                     │                              │  STATUS      │
